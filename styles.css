@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#vis-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#info {
+  width: 240px;
+  font-size: 1rem;
+}
+
+#residueSet {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+#residueSet b {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.modulus-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modulus-line input[type="number"] {
+  flex-grow: 1;
+  margin-right: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #vis-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  svg {
+    width: 90vw;
+    height: 90vw;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  #info {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  button, input[type="number"] {
+    font-size: 1rem;
+  }
+}
+

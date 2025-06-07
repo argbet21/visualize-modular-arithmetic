@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualize Modular Arithmetic</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Visualize Modular Arithmetic</h1>
+    </header>
+
+    <main>
+      <div id="vis-container">
+        <svg width="500" height="500" viewBox="0 0 500 500">
+          <g transform="translate(250,250)" id="pie"></g>
+          <circle
+            cx="250"
+            cy="250"
+            r="180"
+            fill="none"
+            stroke="#111"
+            stroke-width="2"
+          />
+        </svg>
+
+        <div id="info">
+          <div id="residueSet"></div>
+          <div class="controls">
+            <button id="highlightPos">Highlight Positive</button>
+            <button id="highlightNeg">Highlight Negative</button>
+            <button id="clearHighlight">Clear Highlight</button>
+
+            <div class="modulus-line">
+              <label for="sliceInput"><strong>Modulus (n):</strong></label>
+              <input
+                type="number"
+                id="sliceInput"
+                min="2"
+                max="100"
+                value="5"
+              />
+            </div>
+            <button id="drawBtn" class="full-width">Draw</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
